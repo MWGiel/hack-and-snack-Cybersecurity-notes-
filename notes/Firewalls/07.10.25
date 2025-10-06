@@ -1,0 +1,45 @@
+# 🧱 UFW Firewall Basics — Cybersecurity Notes
+
+## 🔐 What is a Firewall?
+
+A **firewall** is a network security tool that monitors **incoming and outgoing traffic**.  
+If the traffic does not comply with the defined rules, it will be **blocked**.
+
+---
+
+## 🔥 Types of Firewalls
+
+### 1. **Stateful Firewall**
+- A more advanced approach.  
+- Analyzes every connection in detail and tracks its state.
+
+### 2. **Stateless Firewall**
+- A simpler and faster approach.  
+- Monitors packets individually without tracking connection states.
+
+---
+
+## ⚙️ Important UFW Commands
+
+| Command | Description |
+|----------|-------------|
+| `sudo ufw enable` | Enables UFW firewall |
+| `sudo ufw disable` | Disables UFW firewall |
+| `sudo ufw allow` | Allows traffic from a specific source to destination |
+| `sudo ufw delete` | Deletes a rule |
+| `sudo ufw status` | Shows current status and rules |
+| `sudo ufw status numbered` | Shows numbered rules |
+| `sudo ufw reset` | Resets UFW to default settings |
+| `sudo ufw limit` | Limits the number of connections (useful for brute-force protection) |
+
+---
+
+## 💻 Example Rules
+
+```bash
+sudo ufw allow 22/tcp
+sudo ufw status numbered
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow 21:23/tcp
+sudo ufw limit 22/tcp
