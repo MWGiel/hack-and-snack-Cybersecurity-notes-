@@ -1,0 +1,79 @@
+# 🧠 Information Security Basics
+
+## 🔒 Information Security
+The act of protecting **data and information** from:
+- Unauthorized access  
+- Unlawful modification  
+- Disruption or disclosure  
+- Corruption and destruction  
+
+---
+
+## 💻 Information Systems Security
+Protecting **systems** that hold and process critical data.
+
+---
+
+## 🧩 CIA Triad
+- **Confidentiality** — protecting data from unauthorized access.  
+- **Integrity** — ensuring data remains accurate and trustworthy.  
+- **Availability** — ensuring data and systems are accessible when needed.  
+
+---
+
+## 🧠 C.I.A.N.A Model
+- **Confidentiality**  
+- **Integrity**  
+- **Availability**  
+- **Non-repudiation** — proving that an action or event occurred and cannot be denied.  
+- **Authentication** — verifying the identity of users or systems.  
+
+---
+
+## 🔑 Triple A of Security
+- **Authentication** — verifying who someone is.  
+- **Authorization** — determining what that person can do.  
+- **Accounting (Auditing)** — tracking actions and resource usage.  
+
+---
+
+## 🧱 Zero Trust Model
+> “Never trust, always verify.”
+
+A security model based on the principle that **no one—inside or outside the organization—should be trusted by default**.
+
+---
+
+## ⚠️ Threats, Vulnerabilities, and Risks
+- **Threat** — anything that could cause harm, loss, or compromise to IT systems.  
+- **Vulnerability** — any weakness in system design or implementation.  
+- **Risk Management** — minimizing the likelihood and impact of threats while ensuring desired outcomes.
+
+---
+
+## 🔐 Confidentiality
+Protects information from unauthorized access and disclosure through:
+- **Encryption** — converting data into code to prevent unauthorized access.  
+- **Access Controls** — ensuring only authorized users can access specific data.  
+- **Data Masking** — obscuring sensitive data while keeping it usable for authorized users.  
+- **Physical Security Measures** — protecting physical and digital assets (servers, workstations).  
+- **Training and Awareness** — regular security awareness sessions for staff.  
+
+---
+
+## ⚙️ Integrity
+Ensures the **accuracy and trustworthiness** of data throughout its lifecycle.
+
+### Key Techniques:
+- **Hashing** — converts data into a fixed-size value.  
+- **Digital Signatures** — use encryption to verify integrity and authenticity.  
+- **Checksums** — verify data integrity during transmission.  
+- **Access Controls** — prevent unauthorized modifications.  
+- **Regular Audits** — review logs and detect unauthorized changes.  
+
+---
+
+📘 **Summary:**  
+Information security is built on the principles of **Confidentiality, Integrity, and Availability**, enhanced with **Authentication, Authorization, and Accountability**.  
+Strong controls, continuous training, and a Zero Trust mindset are essential to maintaining a secure environment.
+
