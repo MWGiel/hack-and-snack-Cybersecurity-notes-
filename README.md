@@ -1,4 +1,4 @@
-# hack-and-snack 🍕💻
+# hack-and-snack 
 **Cybersecurity Notes & Labs**
 
 This repository documents my learning journey in cybersecurity, including study notes, hands-on labs, and small scripts.
