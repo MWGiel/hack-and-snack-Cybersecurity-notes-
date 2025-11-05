@@ -5,10 +5,10 @@ DNS is a system for resolving computer names into IP addresses, and it does not 
 Simplified, we can imagine it like a library with many different phone books.
 The information is distributed over many thousands of name servers. Globally distributed DNS servers translate domain names into IP addresses and thus control which server a user can reach via a particular domain. 
 There are several types of DNS servers that are used worldwide:
-    - DNS root server
-    - Authoritative name server
-    - Non-authoritative name server
-    - Caching server
-    - Forwarding server
-    - Resolver
+- DNS root server
+- Authoritative name server
+- Non-authoritative name server
+- Caching server
+- Forwarding server
+- Resolver
 ## Completed DNS lab :)
