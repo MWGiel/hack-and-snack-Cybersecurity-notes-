@@ -7,4 +7,5 @@ Next, the client (web browser) sends a "client hello" packet, giving information
 The client verifies the key/certificate and sends one of its own. After this, an encrypted handshake is initiated to confirm whether the encryption and transfer are working correctly.
 > Mwegiel@htb[/htb]$ curl https://inlanefreight.com curl: (60) SSL certificate problem: Invalid certificate chain More details here: https://curl.haxx.se/docs/sslcerts.html
 
-## Completed first lab but it was very easy, i have must must curl <ip> -v and got an answer :)
+## Completed first lab
+it was very easy, i have must must curl <ip> -v and got an answer :)
