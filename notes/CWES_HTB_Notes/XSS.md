@@ -37,3 +37,10 @@ There are two types of Non-Persistent XSS vulnerabilities: Reflected XSS, which 
 Reflected XSS vulnerabilities occur when our input reaches the back-end server and gets returned to us without being filtered or sanitized. There are many cases in which our entire input might get returned to us, like error messages or confirmation messages. In these cases, we may attempt using XSS payloads to see whether they execute. However, as these are usually temporary messages, once we move from the page, they would not execute again, and hence they are Non-Persistent.
 
 We can start the server below to practice on a web page vulnerable to a Reflected XSS vulnerability. It is a similar To-Do List app to the one we practiced with in the previous section.
+
+---
+Let's go back to our Stored XSS exercise and use it as a basis for our attack. You can go back to the Stored XSS section to spawn the server and follow the next steps.
+
+To change a web page's background, we can choose a certain color or use an image. We will use a color as our background since most defacing attacks use a dark color for the background. To do so, we can use the following payload:
+> <script>document.body.style.background = "#141d2b"</script>
+
