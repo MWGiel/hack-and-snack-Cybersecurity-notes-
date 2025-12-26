@@ -33,8 +33,6 @@ Reflected XSS vulnerabilities occur when our input reaches the back-end server a
 We can start the server below to practice on a web page vulnerable to a Reflected XSS vulnerability. It is a similar To-Do List app to the one we practiced with in the previous section.
 
 ---
-Let's go back to our Stored XSS exercise and use it as a basis for our attack. You can go back to the Stored XSS section to spawn the server and follow the next steps.
-
 To change a web page's background, we can choose a certain color or use an image. We will use a color as our background since most defacing attacks use a dark color for the background. To do so, we can use the following payload:
 > <script>document.body.style.background = "#141d2b"</script>
 
