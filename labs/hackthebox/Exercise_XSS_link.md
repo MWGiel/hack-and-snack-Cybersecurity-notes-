@@ -1,5 +1,6 @@
 ## Step One: 
 Identify XSS Vulnerabilities
+> Inject the following XSS payloads into different input fields and observe which one triggers a request to our server: (These are examples and may not reflect reality.). Obviously try the same and not different payload.
 ### Step 2: 
 Create a Session Hijacking Payload
 #### Step 3: 
