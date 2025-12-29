@@ -36,3 +36,11 @@ We can start the server below to practice on a web page vulnerable to a Reflecte
 To change a web page's background, we can choose a certain color or use an image. We will use a color as our background since most defacing attacks use a dark color for the background. To do so, we can use the following payload:
 > <script>document.body.style.background = "#141d2b"</script>
 
+---
+ ## XSS Prevention
+ By now, we should have a good understanding of what an XSS vulnerability is and its different types, how to detect an XSS vulnerability, and how to exploit XSS vulnerabilities. We will conclude the module by learning how to defend against XSS vulnerabilities.
+
+As discussed previously, XSS vulnerabilities are mainly linked to two parts of the web application: A Source like a user input field and a Sink that displays the input data. These are the main two points that we should focus on securing, both in the front-end and in the back-end.
+
+The most important aspect of preventing XSS vulnerabilities is proper input sanitization and validation on both the front and back end. In addition to that, other security measures can be taken to help prevent XSS attacks.
+
