@@ -3,7 +3,7 @@ and it is crucial to learn more about MySQL and SQL to understand how SQL inject
 # Structured Query Language (SQL)
 SQL syntax can differ from one RDBMS to another. However, they are all required to follow the ISO standard for Structured Query Language. We will be following the MySQL/MariaDB syntax for the examples shown. SQL can be used to perform the following actions:
 
--Retrieve data
+- Retrieve data
 - Update data
 - Delete data
 - Create new tables and databases
