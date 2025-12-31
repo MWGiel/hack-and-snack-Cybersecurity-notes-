@@ -1,5 +1,5 @@
 ## HTB – SQL Basics: Finding Department Information in the employees Database
-**Objective**
+**Objective:**
 Retrieve the department number (dept_no) for the department named "Development" from the MySQL/MariaDB employees database.
 
 ---
