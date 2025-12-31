@@ -4,25 +4,25 @@ Retrieve the department number (dept_no) for the department named "Development" 
 
 ---
 **1. List all databases**
-SHOW DATABASES;
+> SHOW DATABASES;
 > employees
 
 ---
 **2. Select the target database**
-USE employees;
+> USE employees;
 
 ---
 **3. List all tables in the database**
-SHOW TABLES; 
+> SHOW TABLES; 
 
 ---
 **Inspect the departments table structure**
-DESCRIBE departments;
+> DESCRIBE departments;
 
 ---
 **5. Query the department number for "Development"**
-SELECT * FROM departments WHERE dept_name = 'Development';
+> SELECT * FROM departments WHERE dept_name = 'Development';
 
 ---
 ## Answer
-Department number: d005
+> Department number: d005
