@@ -18,10 +18,9 @@ Visit [mwgsec.com](https://mwgsec.com) or email me
 
 ##  Performance
 - **Security Headers:** A+ (securityheaders.com)
-- **SSL:** A (SSL Labs)
+- **SSL:** A+ (SSL Labs)
 - **Uptime:** 99.9% (via Netlify)
 
 ##  Contact
-- **Email:** [Mail](mikolajwegielewski0@gmail.com)
-- **Website:** [mwgsec.com](https://mwgsec.com)
-- **Discord:** [Dsc](https://discord.gg/rnU42nbsQ6)
+- [**Email**](mikolajwegielewski0@gmail.com)
+- [**Discord**](https://discord.gg/rnU42nbsQ6)
