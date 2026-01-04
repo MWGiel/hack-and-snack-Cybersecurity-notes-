@@ -22,5 +22,5 @@ Visit [mwgsec.com](https://mwgsec.com) or email me
 - **Uptime:** 99.9% (via Netlify)
 
 ##  Contact
-- [**Email**](mikolajwegielewski0@gmail.com)
+- [**Email**](mailto:mikolajwegielewski0@gmail.com)
 - [**Discord**](https://discord.gg/rnU42nbsQ6)
