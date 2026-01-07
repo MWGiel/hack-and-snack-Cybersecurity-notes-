@@ -15,3 +15,17 @@ Finally, in some cases, we may not have direct access to the output whatsoever, 
 ## Comments
 Just like any other language, SQL allows the use of comments as well. Comments are used to document queries or ignore a certain part of the query. We can use two types of line comments with MySQL -- and #, in addition to an in-line comment /**/ (though this is not usually used in SQL injections).
 > SELECT * FROM logins WHERE username='admin'-- ' AND password = 'something';
+## Reading Files
+In addition to gathering data from various tables and databases within the DBMS, a SQL Injection can also be leveraged to perform many other operations, such as reading and writing files on the server and even gaining remote code execution on the back-end server.
+*Privileges*
+Reading data is much more common than writing data, which is strictly reserved for privileged users in modern DBMSes, as it can lead to system exploitation, as we will see. For example, in MySQL, the DB user must have the FILE privilege to load a file's content into a table and then dump data from that table and read files. So, let us start by gathering data about our user privileges within the database to decide whether we will read and/or write files to the back-end server.
+
+---
+To be able to find our current DB user, we can use any of the following queries:
+- SELECT USER()
+- SELECT CURRENT_USER()
+- SELECT user from mysql.user
+---
+we can test if we have super admin privileges with the following query:
+- SELECT super_priv FROM mysql.user
+
